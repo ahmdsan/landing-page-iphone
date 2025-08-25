@@ -1,17 +1,17 @@
-*{
+* {
     margin: 0;
-    padding: 0 ;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: "inter",sans-serif;
+body {
+    font-family: "inter", sans-serif;
     background-color: #f5f5f7;
     color: #1d1d1f;
     line-height: 1.6;
 }
 
-.container{
+.container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 30px;
@@ -19,7 +19,7 @@ body{
 
 /* header */
 
-.main-header{
+.main-header {
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     padding: 15px 0;
@@ -29,13 +29,13 @@ body{
     border-bottom: 1px solid #ddd;
 }
 
-.main-header .container{
+.main-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.Logo{
+.Logo {
     text-decoration: none;
     font-size: 24px;
     font-weight: 600;
@@ -49,7 +49,7 @@ body{
     align-items: center;
 }
 
-.main-nav a{
+.main-nav a {
     text-decoration: none;
     font-size: 16px;
     color: #1d1d1f;
@@ -60,13 +60,13 @@ body{
     justify-content: center;
 }
 
-.main-nav a:hover{
+.main-nav a:hover {
     color: #0071e3;
 }
 
 /* styling buttons */
 
-.btn{
+.btn {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 20px;
@@ -75,76 +75,135 @@ body{
     transition: transform 0.3s ease, background-color 0.3s ease-in-out;
 }
 
-a.btn-nav{
+a.btn-nav {
     background-color: #0071e3;
     color: white;
     transition: all 0.3s ease-in-out;
     border-radius: 6px;
 }
 
-a.btn-nav:hover{
+a.btn-nav:hover {
     background-color: #004386;
     color: white;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #0071e3;
     color: white;
     margin-right: 10px;
 }
 
-.btn-secondary{
+.btn-secondary {
     background-color: #ddd;
     color: #1d1d1f;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+.btn-secondary:hover {
     transform: scale(1.05);
 }
 
 /* styling hero section */
 
-.hero-section{
+.hero-section {
     padding: 80px 0;
     text-align: center;
 }
 
-.hero-container{
+.hero-container {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-.hero-text{
+.hero-text {
     flex: 1;
     text-align: left;
 }
 
-.hero-text h1{
+.hero-text h1 {
     font-size: 64px;
     font-weight: 700;
     margin-bottom: 6px;
 }
 
-.hero-text h2{
+.hero-text h2 {
     font-size: 42px;
     font-weight: 600px;
     margin-bottom: 20px;
 }
 
-.hero-text p{
+.hero-text p {
     font-size: 20px;
     max-width: 450px;
     margin-bottom: 30px;
     color: #6e6e73;
 }
 
-.hero-image{
+.hero-image {
     flex: 1;
 }
 
-.hero-image img{
+.hero-image img {
     max-width: 100%;
     height: auto;
 }
 
+/* STYLING FEATURES SECTION */
+
+.features-section {
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.features-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: #f5f5f7;
+    padding: 40px;
+    border-radius: 20px;
+    flex: 1;  /* membuat ketiga kartu memiliki lebar yg sama */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon{
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.feature-card p{
+    font-size: 16px;
+    color: #6e6e73;
+}
+
+/* Styling footer */
+.main-footer{
+    padding: 40px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #6e6e73;
+}
