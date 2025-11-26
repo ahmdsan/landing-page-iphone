@@ -167,7 +167,7 @@ a.btn-nav:hover {
 }
 
 .features-grid {
-    display: flex;
+    display: flex;  
     gap: 30px;
 }
 
